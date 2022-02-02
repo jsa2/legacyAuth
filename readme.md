@@ -2,6 +2,9 @@
 
 Determine if Conditional Access is configured properly. This tool is alternative solution to [MS Test Connectivity](https://testconnectivity.microsoft.com/tests/o365)
 
+
+![img](https://user-images.githubusercontent.com/58001986/152131519-ed7d7a8a-1f3a-47df-a055-010dfebced01.gif)
+
 ## License
 
 [READ HERE](https://github.com/jsa2/legacyAuth/blob/public/LICENSE)
@@ -35,7 +38,8 @@ curl -o- https://raw.githubusercontent.com/jsa2/legacyAuth/public/remote.sh | ba
 
 **Running**
 ```sh
-
+cd legacyAuth
+node main.js --u=admin@M365B322999.onmicrosoft.com --p='DemoPasswordToEmptyTenant!.1'
 ```
   
 
