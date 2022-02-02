@@ -23,7 +23,7 @@ Legacy SOAP endpoints|detail
 -|-
 ✅ [connectMsOnline](src/msoid.js)| simulates connect-msolService CMDLET <br> **Application** Microsoft Online Syndication Partner Portal <br> **Application ID** d176f6e7-38e5-40c9-8a78-3998aab820e7
 ✅ [connectSPO](src/spo.js)| simulates legacy SPO access<br> **Application**	Office 365 SharePoint Online <br> **Application ID** 00000003-0000-0ff1-ce00-000000000000
-✅ [connectEWS](src/exo.js)| simulates legacy EWS access
+✅ [connectEWS](src/exo.js)| simulates legacy EWS access <br> **Client app**	Exchange Web Services
 
 
 ### Running the tool
