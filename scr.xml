@@ -1,0 +1,147 @@
+{
+  "S:Envelope": {
+    $: {
+      "xmlns:wsa": "http://www.w3.org/2005/08/addressing",
+      "xmlns:wsse": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd",
+      "xmlns:wsu": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd",
+      "xmlns:wsp": "http://schemas.xmlsoap.org/ws/2004/09/policy",
+      "xmlns:wst": "http://schemas.xmlsoap.org/ws/2005/02/trust",
+      "xmlns:S": "http://www.w3.org/2003/05/soap-envelope",
+    },
+    "S:Header": [
+      {
+        "wsa:Action": [
+          {
+            _: "http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue",
+            $: {
+              "S:mustUnderstand": "1",
+              "wsu:Id": "Action",
+            },
+          },
+        ],
+        "wsa:To": [
+          {
+            _: "http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous",
+            $: {
+              "S:mustUnderstand": "1",
+              "wsu:Id": "To",
+            },
+          },
+        ],
+        "wsse:Security": [
+          {
+            $: {
+              "S:mustUnderstand": "1",
+            },
+            "wsu:Timestamp": [
+              {
+                $: {
+                  "wsu:Id": "TS",
+                  "xmlns:wsu": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd",
+                },
+                "wsu:Created": [
+                  "2022-02-02T09:35:38.9253193Z",
+                ],
+                "wsu:Expires": [
+                  "2022-02-02T09:40:38.9253193Z",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "S:Body": [
+      {
+        $: {
+          "xmlns:S": "http://www.w3.org/2003/05/soap-envelope",
+        },
+        "wst:RequestSecurityTokenResponse": [
+          {
+            $: {
+              "xmlns:wsu": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd",
+              "xmlns:wsp": "http://schemas.xmlsoap.org/ws/2004/09/policy",
+              "xmlns:wst": "http://schemas.xmlsoap.org/ws/2005/02/trust",
+            },
+            "wst:TokenType": [
+              "urn:passport:compact",
+            ],
+            "wsp:AppliesTo": [
+              {
+                "wsa:EndpointReference": [
+                  {
+                    $: {
+                      "xmlns:wsa": "http://www.w3.org/2005/08/addressing",
+                    },
+                    "wsa:Address": [
+                      "sharepoint.com",
+                    ],
+                  },
+                ],
+              },
+            ],
+            "wst:Lifetime": [
+              {
+                "wsu:Created": [
+                  "2022-02-02T09:35:38Z",
+                ],
+                "wsu:Expires": [
+                  "2022-02-02T17:35:38Z",
+                ],
+              },
+            ],
+            "wst:RequestedSecurityToken": [
+              {
+                "wsse:BinarySecurityToken": [
+                  {
+                    _: "t=EwDYAk6hBwAUxC4Ij661LFHA0Od8xLyXduL8w5MAAQE2TP3M/OdWWUNtR0hZwDQ760V6moByOI7L5p7PiHGPGtajWJzT7oQZu7VVlDcXbVv/TATCRqizS7K60I64t1E1amg11K+oJdQsAlMoi0xQt/lIPxuhStsCPlJsxPjTnHWQAMCpMjX3xorzyOb6ZxowdcxvcNTuRiAPI1lNkD8epdAbZyOEPM/k8/GQ2tP56ub8h4+QtC6jPHiTcamL7WlXFDvFPSF5zKzDCEnNJU9bTSPS/xTFvsUxxSwElsLpCX/kuI1Z+wGQYhiOHmDDJo8fVBc0kr87AMfuM2BZ1/gO6bZdI0QGvijYuf/0h0clAara/lcMsVGVF+YcyGhvNlEDZgAACBR6NKUaj0FgqAFmD+k3Ql68Oksj8+Z6Orlfs5S2+3sKItSOp6ezNZrfIiURY3OyzuU9267ediOZb7Dszoeb3CX/f5QYZkfq4nybtgG44pyiwv/WTjm1aXSUh+l4utMr2thbdFMtvt+AmoHgfx46gBKzx14xAX5YDInUbcnT8dXqgz2H3MRUXRD0qg+6ey7DmJ2YeoNAg8CnbxEV/tlYwI1GxTR/S6J4mE4w8P+ypxQEqjs8tlBPoqa0GYN0GBLEKc2Ml1fn2vjuLSsdzbTqSUyRTEUuUpVVpBtV7kD7dGZaBHhvaDyHFxJT8GyZslwdYoMDbONtS9o0sHD8MBlcuXy9rBOxZgKNdOsOtH3tgv83HoJB7sgizgWA7GehhS0wQO1Uv+FRILs6JFH+cjnHjqg/SwdCc7yDXCIDOMpeqCOVwvHXmopu7PofjFiGwsCMWRNICqGsGCjd+4tjLkQ5cvyw5Ll/RLbJxX2xL+POnQbWdJajZ8Hoo9rKELYq5DGS5mlwaGpDgWt60migUtAJIrmDcEkMpXmoCIBQs7H7p9b4eoBKbQsa5jAt2W2aXE5PDAd3/wE=&p=",
+                    $: {
+                      Id: "Compact0",
+                      "xmlns:wsse": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd",
+                    },
+                  },
+                ],
+              },
+            ],
+            "wst:RequestedAttachedReference": [
+              {
+                "wsse:SecurityTokenReference": [
+                  {
+                    $: {
+                      "xmlns:wsse": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd",
+                    },
+                    "wsse:Reference": [
+                      {
+                        $: {
+                          URI: "bH+Fi+btHAj5j9y40nILwmIIzNM=",
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+            "wst:RequestedUnattachedReference": [
+              {
+                "wsse:SecurityTokenReference": [
+                  {
+                    $: {
+                      "xmlns:wsse": "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd",
+                    },
+                    "wsse:Reference": [
+                      {
+                        $: {
+                          URI: "bH+Fi+btHAj5j9y40nILwmIIzNM=",
+                        },
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+}
