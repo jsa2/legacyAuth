@@ -1,4 +1,4 @@
-## Basic auth CLI test client for Azure AD Security Assessments 
+## Azure AD Legacy Auth CLI test client for Azure AD Security Assessments 
 
 Determine if Conditional Access is configured properly. This tool is alternative solution to [MS Test Connectivity](https://testconnectivity.microsoft.com/tests/o365)
 
